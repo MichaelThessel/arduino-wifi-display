@@ -57,6 +57,10 @@ void setupSerial()
 void setupWifi()
 {
     debugStartupMessage("Welcome!!!");
+
+    // Add a 5s delay to make sure the ESP is ready
+    debugMessage("Waiting for ESP", 5000);
+
     if (wifi.setOprToStation()) {
         debugStartupMessage("OK set station");
     } else {

@@ -187,7 +187,6 @@ void setup(void)
 {
     setupLcd();
     setupSerial();
-    debugMessage("BOOT");
     setupWifi();
 
     lcd.clear();
